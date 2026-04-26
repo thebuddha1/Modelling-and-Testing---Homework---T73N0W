@@ -1,0 +1,23 @@
+.rating-option input[type="radio"] {
+    display: none;
+}
+
+.rating-option span {
+    display: inline-block;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.rating-option span:hover {
+    background: #f0f0f0;
+}
+
+.rating-option input[type="radio"]:checked + span {
+    background: #2563eb;
+    color: white;
+    border-color: #2563eb;
+    font-weight: bold;
+}
